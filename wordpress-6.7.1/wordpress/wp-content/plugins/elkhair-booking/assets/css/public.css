@@ -1,0 +1,146 @@
+.elkhair-booking-form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.elkhair-booking-form .form-group {
+    margin-bottom: 1.5em;
+}
+
+.elkhair-booking-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.elkhair-booking-form input[type="text"],
+.elkhair-booking-form input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.elkhair-booking-form button {
+    background: #2271b1;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.elkhair-booking-form button:hover {
+    background: #135e96;
+}
+
+/* Datepicker customization */
+.ui-datepicker {
+    background: #fff;
+    padding: 1em;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    font-size: 14px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background: none;
+    border: none;
+    padding: 0.5em 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    cursor: pointer;
+}
+
+.ui-datepicker td {
+    padding: 2px;
+}
+
+.ui-datepicker .ui-state-default {
+    background: transparent;
+    border: none;
+    text-align: center;
+    padding: 0.5em;
+    margin: 1px;
+    color: #333;
+}
+
+.ui-datepicker .available .ui-state-default {
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.ui-datepicker .unavailable .ui-state-default {
+    background: #f5f5f5;
+    color: #999;
+    border-radius: 4px;
+}
+
+.ui-datepicker .booked .ui-state-default {
+    background: repeating-linear-gradient(
+        45deg,
+        #ff9800,
+        #ff9800 5px,
+        #fff 5px,
+        #fff 10px
+    );
+    color: #ff9800;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.ui-datepicker .available:hover .ui-state-default {
+    background: #388E3C;
+}
+
+/* Légende des disponibilités */
+.availability-legend {
+    margin: 1em 0;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.availability-legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.availability-legend .available {
+    background: #4CAF50;
+}
+
+.availability-legend .unavailable {
+    background: #f5f5f5;
+}
+
+.availability-legend .booked {
+    background: repeating-linear-gradient(
+        45deg,
+        #ff9800,
+        #ff9800 5px,
+        #fff 5px,
+        #fff 10px
+    );
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .elkhair-booking-form {
+        margin: 1em;
+        padding: 1em;
+    }
+}

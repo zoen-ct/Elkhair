@@ -1,0 +1,98 @@
+.elkhair-booking-list table {
+    margin-top: 2em;
+}
+
+.elkhair-booking-availability {
+    max-width: 800px;
+    margin: 2em 0;
+}
+
+#availability-calendar {
+    margin-bottom: 2em;
+}
+
+.availability-legend {
+    margin: 1em 0;
+}
+
+.availability-legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.availability-legend .available,
+.ui-datepicker .available {
+    background: #4CAF50;
+}
+
+.availability-legend .unavailable,
+.ui-datepicker .unavailable {
+    background: #f5f5f5;
+}
+
+.availability-legend .booked,
+.ui-datepicker .booked {
+    background: repeating-linear-gradient(
+        45deg,
+        #ff9800,
+        #ff9800 5px,
+        #fff 5px,
+        #fff 10px
+    );
+}
+
+/* Admin Datepicker customization */
+.elkhair-booking-availability .ui-datepicker {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.elkhair-booking-availability .ui-datepicker td {
+    padding: 0.5em;
+    position: relative;
+}
+
+.elkhair-booking-availability .ui-datepicker .ui-state-default {
+    background: transparent;
+    border: none;
+    text-align: center;
+    padding: 0.5em;
+    color: #333;
+}
+
+.elkhair-booking-availability .ui-datepicker .available .ui-state-default {
+    color: #fff;
+}
+
+.elkhair-booking-availability .ui-datepicker .booked .ui-state-default {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.elkhair-booking-availability .ui-datepicker td.available:hover {
+    background: #388E3C;
+    cursor: pointer;
+}
+
+.elkhair-booking-availability .ui-datepicker td.unavailable:hover {
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 782px) {
+    .elkhair-booking-list {
+        overflow-x: auto;
+    }
+    
+    .elkhair-booking-availability {
+        margin: 1em;
+    }
+}
